@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.si.integrator.IntegratorApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.475 s <<< FAILURE! - in com.si.integrator.IntegratorApplicationTests
+com.si.integrator.IntegratorApplicationTests  Time elapsed: 0.473 s  <<< ERROR!
+java.lang.IllegalStateException: Unable to find a @SpringBootConfiguration, you need to use @ContextConfiguration or @SpringBootTest(classes=...) with your test
+
