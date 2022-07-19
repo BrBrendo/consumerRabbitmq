@@ -24,7 +24,7 @@ public class Convert {
 	private static String dtTransfFinsLucr; 
 	private static  Integer clasTrib;
 	private static  String indEscrituracao;
-	private static  String indAcordoSemMulta;
+	private static  String IndAcordoIsenMulta;
 	private static  String iniValid;
 	private static String fimValid;
 	private static String cpf;  
@@ -61,7 +61,7 @@ public class Convert {
 				 dtTransfFinsLucr = obj.getJSONObject("evtInfoContri").getJSONObject("infoContri").getJSONObject("inclusao").getJSONObject("infoCadastro").getString("dtTransfFinsLucr");
 				 clasTrib = obj.getJSONObject("evtInfoContri").getJSONObject("infoContri").getJSONObject("inclusao").getJSONObject("infoCadastro").getInt("clasTrib");
 				 indEscrituracao = obj.getJSONObject("evtInfoContri").getJSONObject("infoContri").getJSONObject("inclusao").getJSONObject("infoCadastro").getString("indEscrituracao");
-				 indAcordoSemMulta = obj.getJSONObject("evtInfoContri").getJSONObject("infoContri").getJSONObject("inclusao").getJSONObject("infoCadastro").getString("indAcordoSemMulta");
+				 IndAcordoIsenMulta = obj.getJSONObject("evtInfoContri").getJSONObject("infoContri").getJSONObject("inclusao").getJSONObject("infoCadastro").getString("IndAcordoIsenMulta");
 				 iniValid = obj.getJSONObject("evtInfoContri").getJSONObject("infoContri").getJSONObject("inclusao").getJSONObject("idePeriodo").getString("iniValid");
 				 fimValid = obj.getJSONObject("evtInfoContri").getJSONObject("infoContri").getJSONObject("inclusao").getJSONObject("idePeriodo").getString("fimValid");
 				 indSitPJ = obj.getJSONObject("evtInfoContri").getJSONObject("infoContri").getJSONObject("inclusao").getJSONObject("infoCadastro").getString("indSitPJ");
@@ -82,7 +82,7 @@ public class Convert {
 				 dtTransfFinsLucr = obj.getJSONObject("evtInfoContri").getJSONObject("infoContri").getJSONObject("alteracao").getJSONObject("infoCadastro").getString("dtTransfFinsLucr");
 				 clasTrib = obj.getJSONObject("evtInfoContri").getJSONObject("infoContri").getJSONObject("inclusao").getJSONObject("infoCadastro").getInt("clasTrib");
 				 indEscrituracao = obj.getJSONObject("evtInfoContri").getJSONObject("infoContri").getJSONObject("alteracao").getJSONObject("infoCadastro").getString("indEscrituracao");
-				 indAcordoSemMulta = obj.getJSONObject("evtInfoContri").getJSONObject("infoContri").getJSONObject("alteracao").getJSONObject("infoCadastro").getString("indAcordoSemMulta");
+				 IndAcordoIsenMulta = obj.getJSONObject("evtInfoContri").getJSONObject("infoContri").getJSONObject("alteracao").getJSONObject("infoCadastro").getString("IndAcordoIsenMulta");
 				 iniValid = obj.getJSONObject("evtInfoContri").getJSONObject("infoContri").getJSONObject("alteracao").getJSONObject("idePeriodo").getString("iniValid");
 				 fimValid = obj.getJSONObject("evtInfoContri").getJSONObject("infoContri").getJSONObject("alteracao").getJSONObject("idePeriodo").getString("fimValid");
 				 indSitPJ = obj.getJSONObject("evtInfoContri").getJSONObject("infoContri").getJSONObject("alteracao").getJSONObject("infoCadastro").getString("indSitPJ");
@@ -103,7 +103,7 @@ public class Convert {
 				 dtTransfFinsLucr = obj.getJSONObject("evtInfoContri").getJSONObject("infoContri").getJSONObject("exclusao").getJSONObject("infoCadastro").getString("dtTransfFinsLucr");
 				 clasTrib = obj.getJSONObject("evtInfoContri").getJSONObject("infoContri").getJSONObject("exclusao").getJSONObject("infoCadastro").getInt("clasTrib");
 				 indEscrituracao = obj.getJSONObject("evtInfoContri").getJSONObject("infoContri").getJSONObject("exclusao").getJSONObject("infoCadastro").getString("indEscrituracao");
-				 indAcordoSemMulta = obj.getJSONObject("evtInfoContri").getJSONObject("infoContri").getJSONObject("exclusao").getJSONObject("infoCadastro").getString("indAcordoSemMulta");
+				 IndAcordoIsenMulta = obj.getJSONObject("evtInfoContri").getJSONObject("infoContri").getJSONObject("exclusao").getJSONObject("infoCadastro").getString("IndAcordoIsenMulta");
 				 iniValid = obj.getJSONObject("evtInfoContri").getJSONObject("infoContri").getJSONObject("exclusao").getJSONObject("idePeriodo").getString("iniValid");
 				 fimValid = obj.getJSONObject("evtInfoContri").getJSONObject("infoContri").getJSONObject("exclusao").getJSONObject("idePeriodo").getString("fimValid");
 				 indSitPJ = obj.getJSONObject("evtInfoContri").getJSONObject("infoContri").getJSONObject("exclusao").getJSONObject("infoCadastro").getString("indSitPJ");
@@ -135,7 +135,7 @@ public class Convert {
 				+ "								<dtTransfFinsLucr>"+dtTransfFinsLucr+"</dtTransfFinsLucr>\r\n"
 				+ "								<clasTrib>"+clasTrib+"</clasTrib>\r\n"
 				+ "								<indEscrituracao>"+indEscrituracao+"</indEscrituracao>\r\n"
-				+ "								<indAcordoSemMulta>"+indAcordoSemMulta+"</indAcordoSemMulta>\r\n"
+				+ "								<IndAcordoIsenMulta>"+IndAcordoIsenMulta+"</IndAcordoIsenMulta>\r\n"
 				+ "								<infoEFR>\r\n"
 				+ "									<cnpjEFR>"+cnpjEFR+"</cnpjEFR>\r\n"
 				+ "									<ideEFR>"+ideEFR+"</ideEFR>\r\n"
@@ -164,9 +164,9 @@ public class Convert {
 				+ "				</evtInfoContri>\r\n"
 				+ "			</Reinf>";
 		System.out.println(xml_concat);
-        String caminhoDoCertificadoDoCliente = "C:/JAVADEV/FABIO RICARDO ARAUJO DA SILVA CONSULTORIA EM TECN41549838000116.pfx";
-        String senhaDoCertificado = "Fabio2010!";
-        String pastaArquivo = "/home/everaldo/temp/notafiscal/assinadas/";
+        String caminhoDoCertificadoDoCliente = "*****.pfx";
+        String senhaDoCertificado = "****";
+       
 
     
 			String resultado = Assinatura.assinarDocumento(caminhoDoCertificadoDoCliente,senhaDoCertificado,xml_concat,id);
